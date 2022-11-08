@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background: linear-gradient(135deg, #004133 0%, #000000 100%);
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.nav {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    text-align: right;
+    padding:  0 2% 0 2%;
+    color: whitesmoke;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+}
+section {
+    height: 100%;
+    padding:  5%;
+    align-items: center;
+
+
+    scroll-snap-align: start;
+}
+
+.headline {
+    text-align: center;
+    line-height: 3;
+    font-size: 2rem;
+    font-weight: 300;;
+}
+
+
+
+
+
+
+
+
+section:nth-child(2){
+}
+
+.project-flex {
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.project-tile {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30vh;
+    width: 30vw;
+    border-radius: 25px;
+    transition: ease-out 1s;
+ 
+
+}
+.project-tile-filter {
+    background-color:transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    color: transparent;
+    transition: ease-out 1s;
+
+
+    
+}
+.project-tile-title {
+    font-weight: 300;
+}
+.project-tile:hover {
+    transform: scale(105%);
+    transition: .5s;
+    
+}
+.project-tile-filter:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: ease-in-out .5s;
+    color: white;
+    
+    
+
+}
+
+.project-tile:nth-child(1) {
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
+}
+.project-tile:nth-child(2) {
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
+}
+.project-tile:nth-child(3) {
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
+}
+.project-tile:nth-child(4) {
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
+}
+
+
+
+
+
+
+
+
+
+
+
+section:nth-child(3){
+}
+
+.contact-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap:5%;
+    height: 70%;
+}
+.contact-tile {
+    background-color: rgba(53, 53, 53, 0.527);
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    border-radius: 50vh;
+    transition: ease-out 1s;   
+}
+#contact-icon {
+    font-size: 5vh;
+}
+.contact-tile p {
+    color: transparent;
+}
+.contact-tile:hover{
+    height: 50vh;
+    width: 20vw;
+    border-radius: 0;
+    transition: .5s;
+    color: white;
+}
+.contact-tile:nth-child(1):hover {
+    background: linear-gradient(135deg, #2d7597 0%, #004e8d 100%);
+}
+.contact-tile:nth-child(2):hover {
+    background: linear-gradient(135deg, #000000 0%, #252525 100%);
+}
+.contact-tile:nth-child(3):hover {
+    background: linear-gradient(135deg, #ca0000 0%, #2700b3 100%);
+}
