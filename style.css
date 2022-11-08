@@ -139,7 +139,7 @@ section:nth-child(2){
 }
 
 .project-tile:nth-child(1) {
-    background-image: url(Web_files/ss_SurveyForm.jpeg);
+    background-image: url(Web_Files/ss_SurveyForm.jpeg);
 }
 .project-tile:nth-child(2) {
     background-image: url(Web_files/ss_SurveyForm.jpeg);
