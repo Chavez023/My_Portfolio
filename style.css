@@ -80,8 +80,18 @@ section {
 }
 
 
+section:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
 
-
+.line {
+    background-color: aqua;
+    height: 2px;
+    width: 40vh;
+}
 
 
 
