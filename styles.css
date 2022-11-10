@@ -33,6 +33,7 @@ a {
     text-align: right;
     padding:  0 2% 0 2%;
     color: whitesmoke;
+    top: 0;
 }
 
 .nav-list {
@@ -98,7 +99,6 @@ section:nth-child(1) {
 
 section:nth-child(2){
 }
-
 .project-flex {
     height: 90%;
     display: flex;
@@ -107,45 +107,51 @@ section:nth-child(2){
     flex-flow: row wrap;
 }
 .project-tile {
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 30vh;
-    width: 30vw;
-    border-radius: 25px;
-    transition: ease-out 1s;
- 
-
+    background-size: cover;
+    height: 25vh;
+    width: 25vw;
+    border-radius: 2vh;
+    transition: ease-in-out  1s;
+    position: relative;
 }
 .project-tile-filter {
-    background-color:transparent;
-    width: 100%;
+    background-color: #0000009d;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 2vh;
+    transition: ease-out 1s;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    color: transparent;
-    transition: ease-out 1s;
+}
+.project-tile-filter h1 {
+    font-weight: 500;
+}
 
 
-    
+@media (max-width: 1000px) {
+    .project-tile {
+        height: 30vh;
+        width: 80vw;
+    }
+    section:nth-child(2) {
+        height: 500vw;
+    }
 }
-.project-tile-title {
-    font-weight: 300;
-}
+
 .project-tile:hover {
-    transform: scale(105%);
-    transition: .5s;
-    
+    height: 35vh;
+    width: 35vw;
+    border-radius: 0;
+
 }
 .project-tile-filter:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: ease-in-out .5s;
-    color: white;
-    
-    
-
+    background-color:transparent;
+    border-radius: 0;
+    color: transparent;
 }
 
 .project-tile:nth-child(1) {
@@ -160,6 +166,13 @@ section:nth-child(2){
 .project-tile:nth-child(4) {
     background-image: url(Web_files/ss_SurveyForm.jpeg);
 }
+.project-tile:nth-child(5) {
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
+}
+.project-tile:nth-child(6) {
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
+}
+
 
 
 
