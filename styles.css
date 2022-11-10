@@ -7,7 +7,7 @@
 }
 html, body {
     height: 100%;
-    background: linear-gradient(135deg, #004133 0%, #000000 100%);
+    background: radial-gradient(circle, #000000 0%, #003327 100%);
     font-family: 'Inter', sans-serif;
     color: white;
 }
@@ -16,16 +16,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
 .nav {
     width: 100%;
     height: fit-content;
@@ -35,20 +25,13 @@ a {
     color: whitesmoke;
     top: 0;
 }
-
 .nav-list {
     list-style: none;
 }
-
 .nav-list li {
     display: inline-block;
     padding: 2%;
 }
-
-
-
-
-
 
 
 
@@ -59,7 +42,7 @@ main {
     height: 100%;
     width: 100%;
 
-    overflow-y: scroll;
+    overflow-y: hidden;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 
@@ -72,33 +55,115 @@ section {
 
     scroll-snap-align: start;
 }
-
 .headline {
     text-align: center;
     line-height: 3;
     font-size: 2rem;
-    font-weight: 300;;
+    font-weight: 300;
 }
 
 
+
+
+
 section:nth-child(1) {
+    display: flex;
+}
+.left {
+    height: 100vh;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column wrap;
+
+    color: rgb(218, 218, 218); 
+}
+.right {
+    width: 50%;
+    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
 }
-
-.line {
+#hi{
+    font-size: 4vh;
+}
+#i {
+    font-size: 3vh;
+}
+#name {
+    font-size: 8vh;
+    font-weight: bold;
+}
+#line {
     background-color: aqua;
     height: 2px;
+    width: 80%;
+}
+#subt {
+    width: 75%;
+    text-align: end;
+    font-size: 2vh;
+    line-height: 3;
+}
+#profile {
     width: 40vh;
+    height: 40vh;
+
+    border-radius: 
+    30% 70% 70% 30% / 
+    33% 30% 70% 67%  ;
+}
+@media (max-width: 1000px) {
+    section:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column-reverse;
+    }
+    .left {
+        height:80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+    .right {
+        height:80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+ 
+    #i {
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+
+    }
+
+    #name {
+        font-size: 5vh;
+    }
+    #line {
+        width: 100%;
+    }
+    #subt {
+        text-align: center;
+    }
+
+       
 }
 
 
 
 
-section:nth-child(2){
-}
+
 .project-flex {
     height: 90%;
     display: flex;
@@ -132,6 +197,9 @@ section:nth-child(2){
 }
 
 
+
+
+
 @media (max-width: 1000px) {
     .project-tile {
         height: 30vh;
@@ -141,7 +209,6 @@ section:nth-child(2){
         height: 500vw;
     }
 }
-
 .project-tile:hover {
     height: 35vh;
     width: 35vw;
@@ -176,16 +243,6 @@ section:nth-child(2){
 
 
 
-
-
-
-
-
-
-
-
-section:nth-child(3){
-}
 
 .contact-flex {
     display: flex;
@@ -228,3 +285,47 @@ section:nth-child(3){
 .contact-tile:nth-child(3):hover {
     background: linear-gradient(135deg, #ca0000 0%, #2700b3 100%);
 }
+
+
+#bgshape-1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        135deg, rgba(197,191,191,0.19) 0%, rgba(0,0,0,0.36) 100%
+        );
+    background-blend-mode: normal;
+    clip-path: polygon(
+        0% 0%, 
+        50% 0%, 
+        70% 100%, 
+        0% 100%
+        );
+}
+#bgshape-2 {
+    position: absolute;
+    right: 0%;
+    top:0px;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(197,191,191,0.19) 0%, rgba(0,0,0,0.36) 100%);
+    background-blend-mode: normal;
+
+    clip-path: polygon(
+        0% 50%, 
+        100% 0%, 
+        100% 100%, 
+        30% 100%
+        );
+  }
+#bgshape-3 {
+    position: absolute;
+    right: 0%;
+    top:0px;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(197,191,191,0.19) 0%, rgba(0,0,0,0.36) 100%);
+    background-blend-mode: normal;
+  }
