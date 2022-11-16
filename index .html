@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Webpage</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div id="bgshape-1"></div>
-    <div id="bgshape-2"></div>
-    <div id="bgshape-3"></div>
+
+    <img id="wave" src="Web_files/Wave-1.png" alt="">
+    <img id="wave" src="Web_files/Wave-2.png" alt="">
+    <div id="oval"></div>
+    <div id="oval"></div>
+    <div id="oval"></div>
+    <div id="oval"></div>
+
+    <nav id="navbar">
+        <ul>
+            <li>
+                <a href="#welcome-section">
+                    overview
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    Works
+                </a>
+            </li>
+            <li>
+                <a href="#contacts">
+                    Contacts
+                </a>
+            </li>
+           </ul>
+    </nav>
 
     <main>
         <section id="welcome-section" class="welcome-section">
             <div class="left"> 
-                <p id="hi">Hello,</p>
-                <p id="i">I'm
+                <p id="hi">Hi,</p>
+                <p id="i">my name is
                 <h1 id="name"> Chavez</h1></p>
                 <div id="line"></div>
                 <p id="subt">a student</p>
@@ -30,7 +51,6 @@
                 <img src="Web_Files/my profile.jpg" alt="User" id="profile">
             </div>
         </section>
-
 
         <section id="projects" class="projects-section">
             <h1 class="headline">My works</h1>
@@ -51,7 +71,7 @@
                     target="_blank"
                     >
                     <div class="project-tile-filter">
-                        <h1 class="project-tile-title">Survey Form</h1>
+                        <h1 class="project-tile-title">Tribute Page</h1>
                     </div>
                 </a>
 
@@ -61,7 +81,7 @@
                     target="_blank"
                     >
                     <div class="project-tile-filter">
-                        <h1 class="project-tile-title">Survey Form</h1>
+                        <h1 class="project-tile-title">Technical Document</h1>
                     </div>
                 </a>
 
@@ -71,7 +91,7 @@
                     target="_blank"
                     >
                     <div class="project-tile-filter">
-                        <h1 class="project-tile-title">Survey Form</h1>
+                        <h1 class="project-tile-title">Landing Page</h1>
                     </div>
                 </a>
 
@@ -81,7 +101,7 @@
                     target="_blank"
                     >
                     <div class="project-tile-filter">
-                        <h1 class="project-tile-title">Survey Form</h1>
+                        <h1 class="project-tile-title">Technical Document</h1>
                     </div>
                 </a>
 
@@ -97,29 +117,23 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
+        <section id="contacts">
             <h1 class="headline">Contacts</h1>
-            <div class="contact-flex">
+            <div class="contacts-flex">
                 <a href="facebook.com" class="contact-tile">
-                    <i class="fa-brands fa-facebook-f" id="contact-icon"></i>
+                    <i class="fa-brands fa-facebook-f" id="contact-icon-1"></i>
                 </a>
-                <a href="" class="contact-tile">
-                    <i class="fa-brands fa-github" id="contact-icon"></i>
-                </a>
-                <a href="mailto:riksomasetsu88@gmail.com" class="contact-tile">
-                    <i class="fa-regular fa-envelope" id="contact-icon"></i>
+                    <a href="" class="contact-tile">
+                        <i class="fa-brands fa-github" id="contact-icon-2"></i>
+                    </a>
+                    <a href="mailto:riksomasetsu88@gmail.com" class="contact-tile">
+                        <i class="fa-regular fa-envelope" id="contact-icon-3"></i>
                 </a>
             </div>
         </section>
     </main>
+  
 
-    <nav id="navbar" class="nav">
-        <ul class="nav-list">
-            <li><a href="#welcome-section">About</a></li>
-            <li><a href="#projects"> Works</a></li>
-            <li><a href="#contact"> Contact</a></li>
-        </ul>
-    </nav>
-    
+
 </body>
 </html>
