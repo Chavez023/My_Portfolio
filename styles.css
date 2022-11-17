@@ -18,11 +18,21 @@ html,body {
 
 
 
+
+
+
 #wave{
     display: block;
     height: 100%;
     width: 100%;
     position: absolute;
+}
+#wave:nth-child(2) {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
 }
 #oval {
     background: linear-gradient(180deg, #9f14c2 0%, #7a0606 99.38%);
@@ -170,7 +180,8 @@ section:nth-child(1) {
 
 
 
-
+section:nth-child(2) {  
+}
 .project-flex {
     height: 80%;
     display: flex;
@@ -223,26 +234,28 @@ section:nth-child(1) {
     background-image: url(Web_Files/ss_SurveyForm.jpeg);
 }
 .project-tile:nth-child(2) {
-    background-image: url(Web_Files/ss_SurveyForm.jpeg);
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
 }
 .project-tile:nth-child(3) {
-    background-image: url(Web_Files/ss_SurveyForm.jpeg);
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
 }
 .project-tile:nth-child(4) {
-    background-image: url(Web_Files/ss_SurveyForm.jpeg);
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
 }
 .project-tile:nth-child(5) {
-    background-image: url(Web_Files/ss_SurveyForm.jpeg);
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
 }
 .project-tile:nth-child(6) {
-    background-image: url(Web_Files/ss_SurveyForm.jpeg);
+    background-image: url(Web_files/ss_SurveyForm.jpeg);
 }
 
 
 
 
 
+section:nth-child(3) {
 
+}
 
 .contacts-flex {
     height: 80%;
