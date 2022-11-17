@@ -27,13 +27,6 @@ html,body {
     width: 100%;
     position: absolute;
 }
-#wave:nth-child(2) {
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-}
 #oval {
     background: linear-gradient(180deg, #9f14c2 0%, #7a0606 99.38%);
     border-radius: 100vh;
