@@ -312,7 +312,8 @@ section:nth-child(3) {
 
 @media (max-width: 1000px) {
     #navbar {
-        top: 90vh;
+        top:auto;
+        bottom: 5vh;
     }
     nav { 
         justify-content: center;
