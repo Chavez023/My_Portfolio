@@ -22,16 +22,27 @@ html,body {
 
 
 #wave{
-    display: block;
     height: 100%;
     width: 100%;
     position: absolute;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 #oval {
     background: linear-gradient(180deg, #9f14c2 0%, #7a0606 99.38%);
     border-radius: 100vh;
     position: absolute;
 }
+
+#wave:nth-child(1) {
+    background-image: url(Web_Files/wave_1.png);
+}
+
+#wave:nth-child(2){
+    background-image: url(Web_Files/wave_2.png);
+}
+
 #oval:nth-child(3) {
     height: 20vh;
     width: 20vh;
@@ -63,32 +74,39 @@ html,body {
 
 
 
+
+
 #navbar {
-    top: 0;
+    top: 5vh;
 }
 nav {
     height: 5vh;
     width: 100%;
-    padding: 0  5vw 0;
-    margin-top: 3vh;
 
     position: fixed;
     z-index: 1;
+    
 
     display: flex;
     justify-content: flex-end;
-    align-items: center;   
+    align-items: center;
+    padding-right: 5vw;
+
 }
-nav ul {
-    height: 100%;
-    list-style: none;
+nav a {
+    width:8vw;
+    line-height: 5vh;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 25px;
+    transition: ease .5s;
+}
+nav a:hover{
+    background-color: rgba(85, 85, 85, 0.5);
+    border-radius: 25px; 
 }
 
-nav li {
-    height: 50%;
-    display: inline-block;
-    margin: 3vw;
-}
+
 
 
 main {
@@ -173,6 +191,7 @@ section:nth-child(1) {
 
 
 
+
 section:nth-child(2) {  
 }
 .project-flex {
@@ -247,9 +266,7 @@ section:nth-child(2) {
 
 
 section:nth-child(3) {
-
 }
-
 .contacts-flex {
     height: 80%;
     display: flex;
@@ -295,27 +312,25 @@ section:nth-child(3) {
 
 @media (max-width: 1000px) {
     #navbar {
-        top: 91vh;
+        top: 90vh;
     }
-    nav {
-
+    nav { 
         justify-content: center;
-        align-items: center;   
-    }
-    
-    nav ul {
-        list-style: none;
-    }
-    
-    nav li {
-        display: inline-block;
-        margin: 3vw;
-    }
-    
-  
-   
-    
+        padding-right: 0;
 
+        background-color: rgba(0, 0, 0, 0.25);
+        width: fit-content;
+        border-radius: 25px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    nav a {
+        width:20vw;
+    }
+
+
+    
     section:nth-child(1) {
         display: flex;
         justify-content: center;
@@ -380,33 +395,27 @@ section:nth-child(3) {
 
 ::-webkit-scrollbar {
   width: 10px;
-  
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
-
 }
- 
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background: none; 
   }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+ 
+::-webkit-scrollbar-thumb {
     background: rgba(136, 136, 136, 0.25); 
     border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  }
+}
+
+
+
 @keyframes oval {
     0% {transform: translateY();}
     50% {
