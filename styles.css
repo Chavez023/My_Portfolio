@@ -252,7 +252,7 @@ section:nth-child(2) {
     background-image: url(Web_Files/ss_SurveyForm.jpeg);
 }
 .project-tile:nth-child(4) {
-    background-image: url(Web_Files/ss_LandingPage.jpeg);
+    background-image: url(Web_Files\ss_LandingPage.jpeg);
 }
 .project-tile:nth-child(5) {
     background-image: url(Web_Files/ss_SurveyForm.jpeg);
@@ -386,7 +386,7 @@ section:nth-child(3) {
         width: 20vh;
     }
     section:nth-child(2) {
-        height: fit-content; 
+        height: 250vh; 
     }
     .project-flex {
         padding-bottom: 25vh;
@@ -396,6 +396,20 @@ section:nth-child(3) {
         margin-bottom: 10vh;
         transition: ease.5s;
     }
+    .project-tile:hover {
+        height: 35vh;
+        width: 80vw;
+        border-radius: 25px;
+        background-size: 100%;
+        background-color: #0000003f;
+    }
+    .project-tile-filter:hover {
+        background-color:transparent;
+        border-radius: 0;
+        color: transparent;
+        }
+
+
     .contacts-flex {
         flex-flow: column;
     }
@@ -404,6 +418,7 @@ section:nth-child(3) {
         height: 15vh;
         width: 15vh;
     }
+    
          
 }
 
