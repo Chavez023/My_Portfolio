@@ -394,7 +394,7 @@ section:nth-child(3) {
     .project-tile {
         width: 80vw;
         margin-bottom: 10vh;
-        transition: ease.5s;
+        transition: ease .5s;
     }
     .project-tile:hover {
         height: 35vh;
