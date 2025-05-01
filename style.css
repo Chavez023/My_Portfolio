@@ -1,0 +1,347 @@
+:root {
+  --primary: #1A1A1A;
+  --secondary: #212121;
+  --tertiary: #313131;
+  --indicator : #1FA23C;
+  --text : #FFFFFF;
+  --Fsize-s: 20px;
+  --Fsize-m: 40px;
+  --Fsize-l: 60px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text);
+  font-size: var(--Fsize-s);
+  font-family: lexend, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: var(--primary);
+}
+
+
+/* Main */
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  padding: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+nav a {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav div {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  height: 5px;
+  width: 100px;
+  background-color: var(--indicator);
+
+}
+
+
+/* container */
+.container {
+  height: 100%;
+  position: relative;
+}
+
+
+/*Container -------------------- */
+section {
+  padding: 60px;
+  position: absolute;
+}
+
+section:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0 50% 40px 40px;
+  
+}
+
+section:nth-child(2) {
+
+  background-image: url(Web_Files/Profile.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  inset: 0 40px 40px 50%;
+
+}
+
+section:nth-child(3) {
+  background-color: var(--secondary);
+  inset: 0 calc(-50% + 40px) 40px 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+
+/*Container_header -------------------- */
+/* Info */
+#info-container_header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+/*Container_Items -------------------- */
+/* Projects */
+#about-container{
+  scale: 0;
+  overflow: hidden;
+}
+/* Projects */
+#projects-container_items {
+  scale: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Contacts */
+#contacts-container_items {
+  scale: 0;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+/*Items -------------------- */
+/*Projects */
+.projects-item {
+  height: 280px;
+  width: 460px;
+  background-color: var(--tertiary);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+
+.projects-item:nth-child(1) {
+  background-image: url(Web_Files/ss_SurveyForm.jpeg);
+}
+
+.projects-item:nth-child(2) {
+  background-image: url();
+}
+.projects-item:nth-child(3) {
+  background-image: url(Web_Files/ss_TechnicalDocument.jpg);
+}
+.projects-item:nth-child(4) {
+  background-image: url(Web_Files/ss_LandingPage.jpeg);
+}
+.projects-item:nth-child(5) {
+  background-image: url();
+}
+.projects-item:nth-child(6) {
+  background-image: url();
+}
+
+.projects-item:nth-child(1)::before,
+.projects-item:nth-child(2)::before,
+.projects-item:nth-child(3)::before,
+.projects-item:nth-child(4)::before,
+.projects-item:nth-child(5)::before,
+.projects-item:nth-child(6)::before {
+  content: "";
+  position: absolute;
+  background-color: var(--tertiary);
+  opacity: 0.8;
+  inset: 0;
+}
+.projects-item:nth-child(1)::after,
+.projects-item:nth-child(2)::after,
+.projects-item:nth-child(3)::after,
+.projects-item:nth-child(4)::after,
+.projects-item:nth-child(5)::after,
+.projects-item:nth-child(6)::after {
+  position: absolute;
+  font-size: var(--Fsize-s);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+}
+.projects-item:nth-child(1)::after {content: "Survey Form"; }
+.projects-item:nth-child(2)::after {content: "Tribute Page"; }
+.projects-item:nth-child(3)::after {content: "Technical Document"; }
+.projects-item:nth-child(4)::after {content: "Product Landing Page"; }
+.projects-item:nth-child(5)::after {content: "JavaScript Pomodoro"; }
+
+
+/*Contacts */
+.contacts-item {
+  height: 260px;
+  width: 260px;
+  padding: 40px;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--tertiary);
+}
+
+
+/* texts -------------------- */
+/* intro-section */
+#intro-section h1 {
+  font-size: var(--Fsize-l);
+}
+
+#intro-section h2 {
+  font-size: var(--Fsize-m);
+  color: var(--indicator);
+}
+
+#intro-section p {
+  font-size: var(--Fsize-s);
+  font-family: lekton, sans-serif;
+  word-spacing: 10px;
+  font-weight: 100;
+  margin: 80px 0 40px 0;
+}
+
+#intro-section a {
+  font-size: var(--Fsize-s);
+  color: var(--indicator);
+}
+
+/* info-container_header */
+#info-container_header h2 {
+  font-size: var(--Fsize-m);
+  margin-bottom: 20px;
+}
+
+/* About */
+#about-container h2 {
+  margin-bottom: 20px;
+  font-size: var(--Fsize-m);
+}
+
+#about-container p {
+  text-indent: 20px;
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.projects-item h3 {
+  font-size: var(--Fsize-s);
+
+}
+
+/* Conbtacts */
+.contacts-item h3 {
+  font-size: var(--Fsize-s);
+  width: 0;
+  overflow: hidden;
+  margin-left: 0;
+}
+
+.contacts-item i {
+  font-size: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hover effects -------------------- */
+/* Projects */
+/* Contacts */
+.contacts-item:hover {
+  height: 260px;
+  width: 480px;
+}
+
+.contacts-item:nth-child(1):hover {
+  background-color: #1877F2;
+}
+
+.contacts-item:nth-child(2):hover {
+  background-color: #0A66C2;
+}
+
+.contacts-item:nth-child(3):hover {
+  background-color: #171515;
+}
+
+.contacts-item:nth-child(4):hover {
+  background-color: #1a7480;
+}
+
+
+
+
+.contacts-item:hover h3 {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
