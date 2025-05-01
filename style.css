@@ -92,7 +92,8 @@ section:nth-child(1) {
 
 section:nth-child(2) {
 
-  background-image: url(Web_Files/Profile.png);
+  background-image: url();
+  background-color: var(--tertiary);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
