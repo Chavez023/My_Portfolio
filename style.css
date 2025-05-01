@@ -176,7 +176,7 @@ section:nth-child(3) {
   background-image: url(Web_Files/ss_LandingPage.jpeg);
 }
 .projects-item:nth-child(5) {
-  background-image: url();
+  background-image: url(Web_Files/ss_Calculator_Basic_1.jpeg);
 }
 .projects-item:nth-child(6) {
   background-image: url();
@@ -207,11 +207,11 @@ section:nth-child(3) {
   align-items: center;
   inset: 0;
 }
-.projects-item:nth-child(1)::after {content: "Survey Form"; }
+.projects-item:nth-child(1)::after {content: "Bakery Survey Form"; }
 .projects-item:nth-child(2)::after {content: "Tribute Page"; }
 .projects-item:nth-child(3)::after {content: "Technical Document"; }
 .projects-item:nth-child(4)::after {content: "Product Landing Page"; }
-.projects-item:nth-child(5)::after {content: "JavaScript Pomodoro"; }
+.projects-item:nth-child(5)::after {content: "Basic Calculator"; }
 
 
 /*Contacts */
