@@ -300,6 +300,11 @@ section:nth-child(3) {
 
 /* hover effects -------------------- */
 /* Projects */
+.projects-item:hover { scale: 1.2; }
+
+.projects-item:hover::before { opacity: 0 ; }
+.projects-item:hover::after {content: "";}
+
 /* Contacts */
 .contacts-item:hover {
   height: 260px;
@@ -307,19 +312,19 @@ section:nth-child(3) {
 }
 
 .contacts-item:nth-child(1):hover {
-  background-color: #1877F2;
+  background: linear-gradient(90deg, #1877F2, #014b96);
 }
 
 .contacts-item:nth-child(2):hover {
-  background-color: #0A66C2;
+  background: linear-gradient(90deg, #0A66C2, #015379);
 }
 
 .contacts-item:nth-child(3):hover {
-  background-color: #171515;
+  background: linear-gradient(90deg, #171515, #000000);
 }
 
 .contacts-item:nth-child(4):hover {
-  background-color: #1a7480;
+  background: linear-gradient(90deg, #02a559, #018f83);
 }
 
 
