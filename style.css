@@ -23,7 +23,7 @@
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: var(--primary);
 }
 
@@ -33,6 +33,8 @@ main {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 30;
 }
 
 /* Header */
@@ -93,7 +95,7 @@ section:nth-child(1) {
 section:nth-child(2) {
 
   background-image: url();
-  background-color: var(--tertiary);
+  background-color: rgba(68, 85, 102, 0.281);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -176,7 +178,7 @@ section:nth-child(3) {
   background-image: url(Web_Files/ss_LandingPage.jpeg);
 }
 .projects-item:nth-child(5) {
-  background-image: url(Web_Files/ss_Calculator_Basic_1.jpeg);
+  background-image: url(Web_Files/ss_Calculator_basic_1.jpeg);
 }
 .projects-item:nth-child(6) {
   background-image: url();
@@ -335,6 +337,82 @@ section:nth-child(3) {
   overflow: hidden;
   margin-left: 40px;
 }
+
+
+
+/* strip effects -------------------- */
+/* strip B */
+#strips-container_b1,
+#strips-container_b2,
+#strips-container_b3,
+#strips-container_b4,
+#strips-container_b5,
+#strips-container_b6 {
+  position: absolute;
+  fill: #313131;
+  filter: drop-shadow(-40px -20px 20px rgba(0, 0, 0, 0.25));
+
+}
+
+
+
+#strip-item_b1,
+#strip-item_b2,
+#strip-item_b3,
+#strip-item_b4,
+#strip-item_b5,
+#strip-item_b6 {
+  width: 300px;
+  height: 1000px;
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+
+#strip-item_b1 { background-color: #414141; }
+#strips-container_b1 {
+  z-index: 19;
+  bottom: -200px;
+  left: -150px;  
+  
+}
+
+#strip-item_b2 {background-color: #313131; }
+#strips-container_b2 {
+  z-index: 18;
+  bottom: -600px;
+  left: 400px;
+}
+
+#strip-item_b3 {background-color: #313131; }
+#strips-container_b3 {
+  z-index: 17;
+  bottom: -200px;
+  left: 180px;
+}
+
+#strip-item_b4 {background-color: #212121; }
+#strips-container_b4 {
+  z-index: 16;
+  bottom: -200px;
+  left: 600px;
+}
+
+#strip-item_b5 {background-color: #212121; }
+#strips-container_b5 {
+  z-index: 15;
+  bottom: -500px;
+  left: 150px; 
+}
+
+#strip-item_b6 {background-color: var(--indicator); }
+#strips-container_b6 {
+  z-index: 14;
+  bottom: -300px;
+  left: 400px;
+}
+
+
+
 
 
 
