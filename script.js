@@ -50,6 +50,20 @@ function contentVisibilityHome() {
   sectionProfile.style.inset = '0 40px 40px 50%';
   sectionInfo.style.inset = '0 calc(-50% + 40px) 40px 100%';
 
+  stripsContainerA1.style.top = '-400px';
+  stripsContainerA2.style.top = '200px';
+  stripsContainerA3.style.top = '-500px';
+  stripsContainerA4.style.top = '-200px';
+  stripsContainerA5.style.top = '-300px';
+  stripsContainerA6.style.top = '-300px';
+
+  stripsContainerA1.style.right = '600px';
+  stripsContainerA2.style.right = '100px';
+  stripsContainerA3.style.right = '300px';
+  stripsContainerA4.style.right = '-100px';
+  stripsContainerA5.style.right = '300px';
+  stripsContainerA6.style.right = '100px';
+
   stripsContainerB1.style.bottom = '-200vh';
   stripsContainerB2.style.bottom = '-200vh';
   stripsContainerB3.style.bottom = '-200vh';
@@ -78,6 +92,23 @@ function contentVisibilityAbout() {
   sectionIntro.style.inset = '0 100% 40px -50%';
   sectionProfile.style.inset = '0 50% 40px 40px';
   sectionInfo.style.inset = '0 40px 40px 50%';
+
+  stripsContainerA1.style.top = '-200vh';
+  stripsContainerA2.style.top = '-200vh';
+  stripsContainerA3.style.top = '-200vh';
+  stripsContainerA4.style.top = '-200vh';
+  stripsContainerA5.style.top = '-200vh';
+  stripsContainerA6.style.top = '-200vh';
+
+  stripsContainerA1.style.right = '-100vw';
+  stripsContainerA2.style.right = '-100vw';
+  stripsContainerA3.style.right = '-100vw';
+  stripsContainerA4.style.right = '-100vw';
+  stripsContainerA5.style.right = '-100vw';
+  stripsContainerA6.style.right = '-100vw';
+
+  
+  
   
   stripsContainerB1.style.bottom = '-200px';
   stripsContainerB2.style.bottom = '-600px';
@@ -107,6 +138,20 @@ function contentVisibilityProjects() {
   sectionIntro.style.inset = '0 100% 40px -50%';
   sectionProfile.style.inset = '0 100% 40px -50%';
   sectionInfo.style.inset = '0 40px 40px 40px';
+
+  stripsContainerA1.style.top = '-200vh';
+  stripsContainerA2.style.top = '-200vh';
+  stripsContainerA3.style.top = '-200vh';
+  stripsContainerA4.style.top = '-200vh';
+  stripsContainerA5.style.top = '-200vh';
+  stripsContainerA6.style.top = '-200vh';
+
+  stripsContainerA1.style.right = '-100vw';
+  stripsContainerA2.style.right = '-100vw';
+  stripsContainerA3.style.right = '-100vw';
+  stripsContainerA4.style.right = '-100vw';
+  stripsContainerA5.style.right = '-100vw';
+  stripsContainerA6.style.right = '-100vw';
 
   stripsContainerB1.style.bottom = '-200vh';
   stripsContainerB2.style.bottom = '-200vh';
@@ -139,6 +184,20 @@ function contentVisibilityContacts() {
   sectionIntro.style.inset = '0 100% 40px -50%';
   sectionProfile.style.inset = '0 100% 40px -50%';
   sectionInfo.style.inset = '0 40px 40px 40px';
+
+  stripsContainerA1.style.top = '-200vh';
+  stripsContainerA2.style.top = '-200vh';
+  stripsContainerA3.style.top = '-200vh';
+  stripsContainerA4.style.top = '-200vh';
+  stripsContainerA5.style.top = '-200vh';
+  stripsContainerA6.style.top = '-200vh';
+
+  stripsContainerA1.style.right = '-100vw';
+  stripsContainerA2.style.right = '-100vw';
+  stripsContainerA3.style.right = '-100vw';
+  stripsContainerA4.style.right = '-100vw';
+  stripsContainerA5.style.right = '-100vw';
+  stripsContainerA6.style.right = '-100vw';
 
   stripsContainerB1.style.bottom = '-200vh';
   stripsContainerB2.style.bottom = '-200vh';
