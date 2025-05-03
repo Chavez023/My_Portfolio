@@ -341,6 +341,77 @@ section:nth-child(3) {
 
 
 /* strip effects -------------------- */
+/* strip A */
+#strips-container_a1,
+#strips-container_a2,
+#strips-container_a3,
+#strips-container_a4,
+#strips-container_a5,
+#strips-container_a6 {
+  position: absolute;
+  fill: #313131;
+  filter: drop-shadow(-40px -20px 20px rgba(0, 0, 0, 0.25));
+  rotate: -135deg;
+
+}
+
+
+
+#strip-item_a1,
+#strip-item_a2,
+#strip-item_a3,
+#strip-item_a4,
+#strip-item_a5,
+#strip-item_a6 {
+  width: 300px;
+  height: 1000px;
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+
+#strip-item_a1 { background-color: #414141; }
+#strips-container_a1 {
+  z-index: 19;
+  top: -400px;
+  right: 600px;  
+  
+}
+
+#strip-item_a2 {background-color: #313131; }
+#strips-container_a2 {
+  z-index: 18;
+  top: 200px;
+  right: 100px;
+}
+
+#strip-item_a3 {background-color: #313131; }
+#strips-container_a3 {
+  z-index: 17;
+  top: -500px;
+  right: 300px;
+}
+
+#strip-item_a4 {background-color: #212121; }
+#strips-container_a4 {
+  z-index: 16;
+  top: -200px;
+  right: -100px;
+}
+
+#strip-item_a5 {background-color: #212121; }
+#strips-container_a5 {
+  z-index: 15;
+  top: -300px;
+  right: 300px; 
+}
+
+#strip-item_a6 {background-color: var(--indicator); }
+#strips-container_a6 {
+  z-index: 14;
+  top: -300px;
+  right: 100px;
+}
+
 /* strip B */
 #strips-container_b1,
 #strips-container_b2,
@@ -371,7 +442,7 @@ section:nth-child(3) {
 #strip-item_b1 { background-color: #414141; }
 #strips-container_b1 {
   z-index: 19;
-  bottom: -200px;
+  bottom: -200vh;
   left: -150px;  
   
 }
@@ -379,35 +450,35 @@ section:nth-child(3) {
 #strip-item_b2 {background-color: #313131; }
 #strips-container_b2 {
   z-index: 18;
-  bottom: -600px;
+  bottom: -200vh;
   left: 400px;
 }
 
 #strip-item_b3 {background-color: #313131; }
 #strips-container_b3 {
   z-index: 17;
-  bottom: -200px;
+  bottom: -200vh;
   left: 180px;
 }
 
 #strip-item_b4 {background-color: #212121; }
 #strips-container_b4 {
   z-index: 16;
-  bottom: -200px;
+  bottom: -200vh;
   left: 600px;
 }
 
 #strip-item_b5 {background-color: #212121; }
 #strips-container_b5 {
   z-index: 15;
-  bottom: -500px;
+  bottom: -200vh;
   left: 150px; 
 }
 
 #strip-item_b6 {background-color: var(--indicator); }
 #strips-container_b6 {
   z-index: 14;
-  bottom: -300px;
+  bottom: -200vh;
   left: 400px;
 }
 
