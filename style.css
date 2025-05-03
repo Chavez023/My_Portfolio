@@ -169,7 +169,7 @@ section:nth-child(3) {
 }
 
 .projects-item:nth-child(2) {
-  background-image: url();
+  background-image: url(Web_Files/ss_TributePage.jpeg);
 }
 .projects-item:nth-child(3) {
   background-image: url(Web_Files/ss_TechnicalDocument.jpg);
